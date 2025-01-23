@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Nunito", serif;
+}
+
+:root {
+    --bg-color: #000000a7;
+    --snd-bf-color: #0000006e;
+    --text-color: #fff;
+    --main-color: #f45959;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--text-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h2{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h2:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img{
+    padding: 1em;
+    float: left;
+    width: 400px;
+    display: block;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-container h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.about-container p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.about-img {
+    float:left;
+    height: 500px;
+    width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #0000006e;
+    color: #fff;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+#contact {
+    padding: 4rem 9%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#contact h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+    margin-top: 50px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--snd-bf-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--main-color);
+    outline: none;
+}
+
+button.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #0000006e;
+}
+
+#experience {
+    padding: 4rem 9%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#experience h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.experience-card {
+    background: var(--snd-bf-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 30rem;
+    height: 40rem;
+    text-align: left;
+}
+
+.experience-card h2 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+}
+
+.experience-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.experience-card p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Center the entire section */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    margin-bottom: 500px;
+  }
+  
+  /* Style for the heading */
+.skills-title {
+    color: #f45959;
+    font-size: 4rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Skills grid styles */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .skill-item {
+    background-color: var(--snd-bf-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2em;
+    aspect-ratio: 1; /* Keep squares */
+    width: 100%; /* Ensure the square adjusts with container */
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    cursor: pointer;
+  }
+
+  
+
+  .contact-title {
+    color: #f45959; /* Example color */
+    font-size: 4rem; /* Adjust size as needed */
+    margin-bottom: 30px; /* Space between the heading and the grid */
+    text-align: center;
+    margin-top: 100px;
+
+  }
+/* Social media container */
+.social-media {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 10px 0;
+    background: var(--snd-bf-color); 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icon {
+    color: var(--main-color);
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+    color: #f45959; 
+  }
+
+  html {
+    scroll-padding-top: 60px;
+  }
+
+  .name {
+    color: #f45959; /* Example color */
+    font-size: 4rem; /* Adjust size as needed */
+
+  }
+  
+  
+  #blog {
+    padding: 4rem 9%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#blog h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.blog-preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 2rem; /* Space between the cards */
+    justify-content: center;
+    align-items: stretch; /* Make cards the same height */
+}
+
+
+.blog-card {
+    background: var(--snd-bf-color);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height:650px;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.blog-content {
+    padding: 2rem;
+    text-align: left;
+}
+
+.blog-content h2 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.blog-content p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.blog-content .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: var(--main-color);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.blog-content .btn:hover {
+    background: #0000006e; /* Adjust hover color */
+}
+
+@media (max-width: 768px) {
+    .blog-preview {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+}
+

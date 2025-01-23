@@ -2,19 +2,211 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Eshaan Punalekar
+EMAIL: epunalek@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
+  <meta name="author" content="Eshaan Punalekar">
+  <meta name="description" content="Eshaan's e-Portfolio">
+  <!-- MAIN CSS-->
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
    <!-- you would link to an external stylesheet here! -->
    <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <title>PERSONAL E-PORTFOLIO</title>
 </head>
 <body>
+  <!-- HEADER DESIGN -->
+   <header class="header">
+    <a href="#" class="logo">e-Portfolio</a>
+
+    <em class="fa-solid fa-bars" id="menu-icon"></em>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#blog">Blog</a>
+      <a href="#skills-section">Skills</a>
+      <a href="#contact">Contact</a>
+      
+    </nav>
+   </header>
+  
+  <!-- HOME SECTION DESIGN-->
+   <section class="home" id="home">
+    <div class="home-content">
+      <h2>Hi, I'm</h2>
+      <h1 class="name">Eshaan Punalekar</h1>
+      <h2>And I'm a <span>Computer Science Student</span></h2>
+      <a href="resume.pdf" class="btn" download>Download Resume</a>
+      
+    </div>
+    <!-- <div class="home-img">
+      <img src="pic.jpeg" alt="">
+    </div> -->
+   </section>
+
+  <!-- ABOUT SECTION-->
+  <section id="about">
+    <div class="about-container">
+      <img src="pic.jpeg" alt="A portrait of Eshaan Punalekar" class="about-img">
+      <div>
+        <h1>About Me</h1>
+        <p>
+          Hello, I'm Eshaan Punalekar a Computer Science major with a minor in Innovation and Entrepreneurship at the University of California, Irvine. My passion lies at the intersection of technology and creative problem-solving. With a strong foundation in data analysis, machine learning, and AI development, I strive to build innovative solutions that have a tangible impact.
+        </p>
+        <p>
+          I've had the privilege of working across diverse industries and global settings, from refining AI models for healthcare data at Shift Technology in Paris to advancing voice AI accuracy during my internship at Skit.ai in Bangalore. My experiences have equipped me with technical expertise in Python, machine learning models, and computer vision, as well as the adaptability to collaborate with cross-functional teams.
+        </p>
+    
+        <p>When I'm not coding, you can find me exploring new cultures (I’ve traveled to 26 countries!), writing on my tech blog, or diving into new learning experiences through courses and certifications.</p>
+          
+        
+      </div>
+    </div>
+  </section>
+  
+
+  
+   
+  <!-- EXPERIENCE SECTION-->
+
+  <section id="experience">
+    <h1>Experience</h1>
+    <div class="experience-container">
+      <!-- Internship 1 -->
+      <div class="experience-card">
+        <h2>Data Science Intern</h2>
+        <h3>Scienaptic Systems</h3>
+        <p>June 2022 - July 2022</p>
+        <p>Analyzed state and county demographic data to calculate risk scores and predict money-lending probabilities. Utilized Python and pandas to process, manipulate, and visualize datasets. Collaborated with teams to deliver actionable insights, enhancing client decision-making. Achieved 95% model accuracy, significantly improving underwriting strategies.</p>
+      </div>
+  
+      <!-- Internship 2 -->
+      <div class="experience-card">
+        <h2>Machine Learning Intern</h2>
+        <h3>Skit.ai</h3>
+        <p>June 2022 - July 2022</p>
+        <p>Developed and enhanced NLP software, refining BERT models for enterprise-level voice AI applications. Trained custom intent classification models on company datasets, improving customer service accuracy by 40% and reducing response times by 20%. Partnered with teams to integrate NLP solutions into production systems, enhancing user experiences and operational efficiency.</p>
+      </div>
+  
+      <!-- Internship 3 -->
+      <div class="experience-card">
+        <h2>AI & Healthcare Intern</h2>
+        <h3>Shift Technology</h3>
+        <p>June 2023 - August 2023</p>
+        <p>Explored ICD-10 code applicability to CPT codes for medical service categorization, focusing on healthcare workflows. Conducted data labeling and annotation, leveraging prompt engineering to optimize predictive accuracy. Designed and tested AI-driven Langchain models, enabling advanced LLM applications in healthcare data processing. Improved healthcare code prediction accuracy by 50%, enhancing operational efficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section id="blog">
+    <h1>My Tech Blog</h1>
+    <div class="blog-preview">
+      <div class="blog-card">
+        <img src="cyber.jpg" alt="Cybersecurity Blog Thumbnail">
+        <div class="blog-content">
+          <h2>3 Types of Cyberattacks Plaguing Businesses Today</h2>
+          <p>A deep dive into recent advancements in AI, machine learning, and how they're shaping the tech industry.</p>
+          <a href="https://techandsomemore.wordpress.com/2021/06/13/3-types-of-cyberattacks/" target="_blank" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="neuron.png" alt="Neural Networks Blog Thumbnail">
+        <div class="blog-content">
+          <h2>How do Neural Networks Work?</h2>
+          <p>A deep dive into recent advancements in AI, machine learning, and how they're shaping the tech industry.</p>
+          <a href="https://techandsomemore.wordpress.com/2021/04/10/how-do-neural-networks-work/" target="_blank" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="deepfake.jpg" alt="Deepfake Blog Thumbnail">
+        <div class="blog-content">
+          <h2>The Rise of Deepfakes</h2>
+          <p>A deep dive into recent advancements in AI, machine learning, and how they're shaping the tech industry.</p>
+          <a href="https://techandsomemore.wordpress.com/2021/04/10/how-do-neural-networks-work/" target="_blank" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="ai.jpg" alt="AI Blog Thumbnail">
+        <div class="blog-content">
+          <h2>Artificial Intelligence - A Threat or a Blessing?</h2>
+          <p>A deep dive into recent advancements in AI, machine learning, and how they're shaping the tech industry.</p>
+          <a href="https://techandsomemore.wordpress.com/2021/04/10/how-do-neural-networks-work/" target="_blank" class="btn">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+
+
+  <!-- SKILLS SECTION-->
+
+  <section id="skills-section">
+    <h1 class="skills-title">Skills</h1>
+    <div class="skills-container">
+      <div class="skill-item">Python</div>
+      <div class="skill-item">Java</div>
+      <div class="skill-item">C++</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">HTML</div>
+      <div class="skill-item">CSS</div>
+      <div class="skill-item">SQL</div>
+      <div class="skill-item">Git</div>
+      <div class="skill-item">TensorFlow</div>
+    </div>
+  </section>
+  
+
+  <!-- CONTACT SECTION-->
+
+  <section id="contact">
+    <h1 class="contact-title">Contact</h1>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <div class="social-media">
+    <a href="https://www.linkedin.com/in/eshaan-punalekar-62869919b/" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <em class="fa-brands fa-linkedin"></em>
+    </a>
+    <a href="https://github.com/eshaan10" target="_blank" class="social-icon" aria-label="GitHub">
+      <em class="fa-brands fa-github"></em>
+    </a>
+    <a href="https://www.instagram.com/eshaanpunalekar/" target="_blank" class="social-icon" aria-label="Instagram">
+      <em class="fa-brands fa-instagram"></em>
+    </a>
+    
+    <a href="https://open.spotify.com/user/07mpqk28sb2h9xslbz6ejoilq" target="_blank" class="social-icon" aria-label="Music">
+      <em class="fa-solid fa-music"></em>
+    </a>
+  </div>
+  
+  
   <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
